@@ -1,6 +1,6 @@
 {
   "name": "scode-cli",
-  "version": "0.0.8",
+  "version": "0.1.8",
   "description": "standalone php mvc application.",
   "main": "index.js",
   "type": "module",
@@ -15,8 +15,11 @@
     "url": "git+https://github.com/ScorpioCoding/scode-cli.git"
   },
   "keywords": [
-    "stamp",
-    "stamp-cli",
+    "scode",
+    "scode-cli",
+    "webapp",
+    "php",
+    "mvc",
     "scorpiocoding"
   ],
   "author": "scorpiocoding",
@@ -27,6 +30,7 @@
   "homepage": "https://github.com/ScorpioCoding/scode-cli#readme",
   "dependencies": {
     "chalk": "^5.4.1",
+    "figlet": "^1.8.0",
     "inquirer": "^12.3.0",
     "ora": "^8.1.1"
   }

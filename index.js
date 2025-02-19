@@ -7,6 +7,8 @@ import * as fs from "fs";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import createDirectoryContents from "./createDirectoryContents.js";
+import createFiglet from "./createFiglet.js";
+
 const CURR_DIR = process.cwd();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -31,18 +33,27 @@ const QUESTIONS = [
   },
 ];
 
-inquirer.prompt(QUESTIONS).then((answers) => {
-  const projectChoice = answers["project-choice"];
-  const projectName = answers["project-name"];
-  const templatePath = `${__dirname}/templates/${projectChoice}`;
+const greet = async () => {
+  createFiglet("SCODE-CLI");
 
-  const spinner = ora(`Doing ${projectChoice}...`).start(); // Start the spinner
+  //Wait for 2 secs
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  fs.mkdirSync(`${CURR_DIR}/${projectName}`);
+  inquirer.prompt(QUESTIONS).then((answers) => {
+    const projectChoice = answers["project-choice"];
+    const projectName = answers["project-name"];
+    const templatePath = `${__dirname}/templates/${projectChoice}`;
 
-  createDirectoryContents(templatePath, projectName);
+    const spinner = ora(`Doing ${projectChoice}...`).start(); // Start the spinner
 
-  setTimeout(() => {
-    spinner.succeed(chalk.green("Done!"));
-  }, 3000);
-});
+    fs.mkdirSync(`${CURR_DIR}/${projectName}`);
+
+    createDirectoryContents(templatePath, projectName);
+
+    setTimeout(() => {
+      spinner.succeed(chalk.green("Done!"));
+    }, 3000);
+  });
+};
+
+greet();

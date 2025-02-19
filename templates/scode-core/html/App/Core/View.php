@@ -17,7 +17,7 @@ class View
   {
     $page = PATH_MOD;
     $page .= ucfirst($args['module']) . DS . 'Views' . DS;
-    $page .= strtolower($args['controller']);
+    $page .= ucfirst($args['controller']);
     $page .= '.phtml';
 
     try {
@@ -32,8 +32,8 @@ class View
   public static function setTemplate($args = array())
   {
     $template = PATH_MOD;
-    $template .= 'Templates' . DS;
-    $template .= strtolower($args['template']);
+    $template .= ucfirst($args['module']) . DS . 'Templates' . DS;
+    $template .= ucfirst($args['template']);
     $template .= '.phtml';
 
     try {
