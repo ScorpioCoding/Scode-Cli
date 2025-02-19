@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="<?= $scMetaLanguage ?>" dir="ltr" color-scheme="auto">
+
+<head>
+  <?php include 'frontend/header.phtml'; ?>
+
+
+
+  <link rel="stylesheet" href="<?= $scPathTempCss; ?>.css">
+  <link rel="stylesheet" href="<?= $scPathCss; ?>.css">
+</head>
+
+<body>
+
+  <main>
+    <?php include $page; ?>
+  </main>
+
+
+  <script src="<?= $scPathTempJs; ?>.js"></script>
+  <script src="<?= $scPathJs; ?>.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  #nginx
+  server:
+    container_name: scserver
+    image: nginx:stable-alpine
+    restart: always
+    ports:
+      - "6080:80"
+    volumes:
+      - ../html:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - scorpionet
+
+  #php
+  app:
+    container_name: scapp
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
+    restart: always
+    volumes:
+      - ../html:/var/www/html
+    networks:
+      - scorpionet
+
+ 
+networks:
+  scorpionet:
+    name: scorpionet
