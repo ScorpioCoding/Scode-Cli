@@ -67,3 +67,18 @@
 
 - Remove Boxen
 - Added Notes
+
+## 0.1.9
+
+- Modded All Versions
+  - Modded Templates
+    - Added footer.phtml
+    - Modded Frontend.phtml
+    - Modded navigation.phtml
+
+## 0.2.0
+
+- Modded Translation files
+  - Removed the trans layer in the json files
+- Modded Templates
+  - navigation.phtml

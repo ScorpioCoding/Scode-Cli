@@ -1,13 +1,11 @@
 {
-  "trans": {
-    "branding": {
-      "slogan": "Design, Develop, Devops notre plasir! ",
-      "welcome": "- bienvenu -"
-    },
-    "nav": {
-      "home": "Accueil",
-      "about": "Somme Nous",
-      "contact": "Contactez"
-    }
+  "branding": {
+    "slogan": "Design, Develop, Devops notre plasir! ",
+    "welcome": "- bienvenu -"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "Somme Nous",
+    "contact": "Contactez"
   }
 }

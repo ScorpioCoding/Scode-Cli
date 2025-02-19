@@ -1,8 +1,6 @@
 <nav class="navbar">
   <div class="brand-title">
-
-    QuickStart
-
+    <?= $scMetaOgSiteName ?>
   </div>
 
   <a href="#" class="toggle-button">
@@ -14,17 +12,17 @@
     <ul class="links">
       <li>
         <a <?= $scMetaController === 'Home' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Home">
-          <?= $trans['menu']['home'] ?>
+          <?= $trans['nav']['home'] ?>
         </a>
       </li>
       <li>
         <a <?= $scMetaController === 'About' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/About">
-          <?= $trans['menu']['about'] ?>
+          <?= $trans['nav']['about'] ?>
         </a>
       </li>
       <li>
         <a <?= $scMetaController === 'Contact' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Contact">
-          <?= $trans['menu']['contact'] ?>
+          <?= $trans['nav']['contact'] ?>
         </a>
       </li>
     </ul>

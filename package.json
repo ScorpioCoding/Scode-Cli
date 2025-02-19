@@ -1,6 +1,6 @@
 {
   "name": "scode-cli",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "standalone php mvc application.",
   "main": "index.js",
   "type": "module",

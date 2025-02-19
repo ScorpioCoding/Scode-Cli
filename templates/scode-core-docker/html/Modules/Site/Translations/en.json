@@ -1,13 +1,11 @@
 {
-  "trans": {
-    "branding": {
-      "slogan": "Design, Develop, Devops our pleasure! ",
-      "welcome": "- welcome -"
-    },
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "contact": "Contact"
-    }
+  "branding": {
+    "slogan": "Design, Develop, Devops our pleasure! ",
+    "welcome": "- welcome -"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
   }
 }
