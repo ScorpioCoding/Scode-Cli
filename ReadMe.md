@@ -26,12 +26,18 @@ From Single Page Applications (SPA) to full blown Backend Data Driven Applicatio
 - scode-core-docker-gulp
   - The core appllication for Docker with gulp automation.
   - Automated folder relocation
-  - Autmated Javascript and Sass
+  - Automated Javascript and Sass
 - scode-core-docker-gulp-mysql
   - The core application for Docker with gulp automation and MySql database.
   - Automated folder relocation
-  - Autmated Javascript and Sass
+  - Automated Javascript and Sass
   - PhpAdmin for database management
+- scode-core-docker-gulp-mysql-api
+  - The core application for Docker with gulp automation and MySql database.
+  - Automated folder relocation
+  - Automated Javascript and Sass
+  - PhpAdmin for database management
+  - Modified to read Api urls. ex https://api.example.org
 
 ## Installation
 

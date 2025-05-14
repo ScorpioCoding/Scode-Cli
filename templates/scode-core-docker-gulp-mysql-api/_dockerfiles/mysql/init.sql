@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS scorpio;
+
+USE scorpio;
+
+CREATE TABLE IF NOT EXISTS `film` ( 
+  id SERIAL PRIMARY KEY,   
+  name VARCHAR(255) UNIQUE,
+  slug VARCHAR(255) UNIQUE,
+  author VARCHAR(255) NULL,
+  image  LONGBLOB NULL,
+  `about` VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
